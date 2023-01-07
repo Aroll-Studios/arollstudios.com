@@ -1,0 +1,391 @@
+html {
+
+}
+
+body {
+    background-color: #101010;
+    font-family: Carlito;
+    color: white;
+}
+
+/* .............................. Header .............................. */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: -49vw;
+}
+
+header.index {
+    margin-bottom: -16vw;
+}
+
+.container-header-video {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 70%;
+}
+
+.header-bg-video {
+    width: 100%;
+    z-index: 0;
+
+    object-position: 0 -200px;
+}
+
+.container-header-img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    overflow:hidden;
+    display:block;
+}
+
+.header-bg-img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    object-position: -15vw 40%;
+    transform: scale(1.5);
+    z-index: 0;
+}
+
+.top-bar {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 10;
+    padding-top: 4vh;
+}
+
+.header-img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 20%;
+    margin-left: 4vh;
+}
+
+nav {
+    grid-column: 2;
+    grid-row: 1;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    font-size: 1.3vw;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+/* .............................. Main .............................. */
+
+main {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 0;
+
+    font-size: 1vw;
+}
+
+/* ............... Hem ............... */
+
+/* ............... Om Oss ............... */
+
+.about-us-text {
+    margin: 0 auto;
+    width: 80%;
+}
+
+div.tobe {
+    width: 40%;
+    text-align: start;
+    margin: 5vw 0 0 0;
+}
+div.tobe img {
+    width: 100%;
+}
+div.tobe div {
+    width: 80%;
+}
+
+div.whole-jeep {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+div.jeep {
+    width: 40%;
+    text-align: start;
+    position: relative;
+    top: -15vw;
+    margin-bottom: -15vw;
+}
+div.jeep img {
+    width: 100%;
+}
+div.jeep div {
+    width: 80%;
+}
+
+/* ............... Portfolio ............... */
+
+div.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.video {
+    margin: 1vw;
+}
+
+div.iframe {
+    max-width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+div.iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.video h3 {
+    margin: 0.5vw 0 0 0;
+}
+
+/* ............... Priser ............... */
+
+div.prices-header {
+    margin: 4vw 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 8vw;
+}
+img.prices-header {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 45%;
+}
+img.prices-header-photo {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 33%;
+}
+img.prices-header-programming {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+h1.prices-header {
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    text-shadow: black 3px 3px 5px;
+}
+
+div.prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+div.prices-div {
+    padding: 0 2vw;
+    margin: 2vw 0 0 0;
+}
+img.prices {
+    width: 5vw;
+}
+h3.prices {
+    margin: 5px 0;
+}
+h5.prices {
+    margin: 0;
+}
+
+div.prices-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div.prices-div-2 {
+    padding: 0 4vw;
+    margin: 2vw 0 0 0;
+}
+
+/* ............... Kontakta Oss ............... */
+
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+div.form-label-input {
+    display: grid;
+    grid-template-columns: 1fr 2fr
+}
+
+form label {
+    text-align: end;
+    margin: 1vw 1vw 0 0;
+}
+
+form label.form-textarea {
+    text-align: center;
+    margin: 1vw 0 0 0;
+}
+
+form input.form-text {
+    margin: 1vw 0 1vw 0;
+    width: 60%;
+}
+
+form div.form-textarea {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 0 2vw;
+}
+
+form div.form-textarea textarea {
+    min-height: 5vw;
+}
+
+form div.form-submit {
+    margin: 2vw 2vw 0 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+form input.submit {
+    margin: 1vw;
+    border-radius: 2px;
+    background-color: cadetblue;
+    font-size: large;
+}
+
+/* .............................. Footer .............................. */
+
+footer {
+    width: 60%;
+    margin: 5vw auto 2vw;
+    border-top-style: solid;
+    border-color: #333;
+    height: 4vw;
+    text-align: center;
+
+    font-size: 1vw;
+}
+
+footer p {
+    margin-top: 2vw;
+}
+
+/* .............................. Media .............................. */
+
+@media (orientation: portrait){
+
+    header.index {
+        margin-bottom: 0;
+    }
+
+    .container-header-video {
+        height: 100%;
+    }
+
+    .header-bg-video {
+        object-position: 0 0;
+    }
+
+    .top-bar {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .header-img {
+        grid-column: 1;
+        grid-row: 1;
+        width: 20%;
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+
+    .top-bar {
+        padding-top: 1vh;
+    }
+
+    nav {
+        grid-column: 2;
+        grid-row: 1;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        font-size: 2vw;
+    }
+
+    header.index nav {
+        font-size: 2.5vw;
+    }
+
+    main {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    div.tobe {
+        margin: 5vw 0 0 2vw;
+    }
+
+    div.jeep {
+        margin: 0 2vw -15vw 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
