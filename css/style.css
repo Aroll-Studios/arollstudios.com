@@ -17,7 +17,7 @@ header {
 }
 
 header.index {
-    margin-bottom: -16vw;
+    margin-bottom: 0vw;
 }
 
 .container-header-video {
@@ -26,14 +26,14 @@ header.index {
     width: 100%;
     overflow: hidden;
     display: block;
-    height: 70%;
+    height: 42vw;
 }
 
 .header-bg-video {
     width: 100%;
     z-index: 0;
 
-    object-position: 0 -200px;
+    object-position: 0 -8vw;
 }
 
 .container-header-img {
@@ -58,7 +58,6 @@ header.index {
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 10;
     padding-top: 4vh;
 }
 
@@ -67,6 +66,7 @@ header.index {
     grid-row: 1;
     width: 20%;
     margin-left: 4vh;
+    z-index: 10;
 }
 
 nav {
@@ -75,6 +75,7 @@ nav {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    z-index: 10;
 
     font-size: 1.3vw;
 }
@@ -97,6 +98,10 @@ main {
 }
 
 /* ............... Hem ............... */
+
+p.break {
+    margin-top: 4rem;
+}
 
 /* ............... Om Oss ............... */
 
@@ -152,6 +157,7 @@ div.iframe {
     padding-top: 56.25%;
     position: relative;
     width: 100%;
+    z-index: 10;
 }
 
 div.iframe iframe {
@@ -261,6 +267,7 @@ form label.form-textarea {
 form input.form-text {
     margin: 1vw 0 1vw 0;
     width: 60%;
+    z-index: 10;
 }
 
 form div.form-textarea {
@@ -272,6 +279,7 @@ form div.form-textarea {
 
 form div.form-textarea textarea {
     min-height: 5vw;
+    z-index: 10;
 }
 
 form div.form-submit {
@@ -285,6 +293,7 @@ form input.submit {
     border-radius: 2px;
     background-color: cadetblue;
     font-size: large;
+    z-index: 10;
 }
 
 /* .............................. Footer .............................. */
@@ -308,20 +317,8 @@ footer p {
 
 @media (orientation: portrait){
 
-    header.index {
-        margin-bottom: 0;
-    }
-
-    .container-header-video {
-        height: 100%;
-    }
-
-    .header-bg-video {
-        object-position: 0 0;
-    }
-
     .top-bar {
-        grid-template-columns: 4fr 1fr;
+        grid-template-columns: 3fr 1fr;
     }
 
     .header-img {
