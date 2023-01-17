@@ -58,15 +58,26 @@ header.index {
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 4vh;
+    padding-top: 2vw;
 }
 
 .header-img {
     grid-column: 1;
     grid-row: 1;
     width: 20%;
-    margin-left: 4vh;
+    margin-left: 2vw;
     z-index: 10;
+}
+
+a.menu-btn {
+    position: absolute;
+    width: 13vw;
+    right: 4vw;
+    display: none;
+}
+
+img.menu-btn {
+    width: 100%;
 }
 
 nav {
@@ -75,7 +86,7 @@ nav {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    z-index: 10;
+    z-index: 20;
 
     font-size: 1.3vw;
 }
@@ -333,18 +344,33 @@ footer p {
         padding-top: 1vh;
     }
 
-    nav {
-        grid-column: 2;
-        grid-row: 1;
-        height: fit-content;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-        font-size: 2vw;
+    a.menu-btn {
+        display: flex;
     }
 
-    header.index nav {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    header nav {
         font-size: 2.5vw;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        width: 50%;
+        height: 38vw;
+        left: 25%;
+        right: 25%;
+
+        flex-direction: column;
+        font-size: 5.8vw;
+    }
+
+    header a {
+        margin: 0.2vw auto;
     }
 
     main {
