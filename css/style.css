@@ -156,7 +156,7 @@ div.jeep div {
 
 div.portfolio {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 div.video {
@@ -177,6 +177,7 @@ div.iframe iframe {
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 div.video h3 {
