@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: #101010;
-    font-family: Carlito;
+    font-family: Carlito, sans-serif;
     color: white;
 }
 
@@ -156,7 +156,7 @@ div.jeep div {
 
 div.portfolio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 div.video {
